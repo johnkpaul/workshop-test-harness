@@ -9,12 +9,19 @@ clone this repository
 
 ```npm install```
 
-
 *Run tests in command line after every change
 `grunt watch`
 
-*Unit tests
-`open ./www-root/test/test.html`
+*Run tests in command line 
+`grunt qunit`
+
+*Run tests in browser
+
+`open ./www-root/test/test.html` //osx
+
+`start ./www-root/test/test.html` //ubuntu
+
+double click ./www-root/test/test.html //everywhere
 
 ## License
 Copyright (c) 2013 John K. Paul  
