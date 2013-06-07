@@ -2,7 +2,7 @@
 /*global start:false, stop:false ok:false, equal:false, notEqual:false, deepEqual:false*/
 /*global notDeepEqual:false, strictEqual:false, notStrictEqual:false, raises:false*/
 /*global sinon:false, Backbone:false*/
-(function($) {
+(function(global, jQuery) {
 
   /*
     ======== A Handy Little QUnit Reference ========
@@ -36,6 +36,20 @@
     equal(sum, 3, 'Calculator can add two numbers');
   });
 
+  /*
+  module('ItemSelectionView Tests', {
+    setup: function() {
+      this.view = new global.ItemSelectionView({el: jQuery('#qunit-fixture ul')});
+    },
+    teardown: function() {
+    }
+  });
+
+  test('when second li is clicked, markItemSelected is called', 1, function() {
+    this.view.$('li').eq(1).trigger('click');
+  });
+  */
 
 
-}(jQuery));
+
+}(window, window.jQuery));
